@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/register.css">
+    <script src="https://kit.fontawesome.com/c85042c871.js" crossorigin="anonymous"></script>
+    <title>Registrate</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="menu1">
+            <img class="logo" src="/imagen/logo-mercado-liebre.svg" alt="LOGO">
+            <div class="busqueda"><input type="text" name="Buscar" id="Buscar" placeholder="Buscar..."></div>
+            <div class="compra">Compra en cuotas y sin tarjeta de credito</div>
+        </div>
+        <section class="menu2">
+            <div>
+                <div>Ofertas</div>
+                <div>Tiendas oficiales</div>
+                <div>Vender</div>
+                <div>Ayuda</div>
+            </div>
+            <div>
+                <a href="/home/register"><span>Crea tu cuenta <i class="fa-solid fa-shop"></i></span></a>
+                <a href="/home/login"> <span>Ingresa <i class="fa-solid fa-right-to-bracket"></i></span> </a>
+                <span>Mas compras <i class="fa-solid fa-basket-shopping"></i></span>
+            </div>
+        </section>
+    </header>
+
+    <section class="Registrate">
+        <section>
+        <div>
+            <form action="/" method="post"></form>
+            <label for="Nombre"> Nombre y Apellido </label>
+            <input type="text" id="Nombre">
+    </div>
+    <div>
+        <form action="/" method="post"></form>
+        <label for="NombreUsuario"> Nombre de Usuario </label>
+        <input type="text" id="NombreUsuario">
+    </div>
+        <div>
+            <form action="/" method="post"></form>
+        <label for="FechaNacimiento"> Fecha de nacimiento</label>
+        <input type="date" id="FechaNacimiento">
+        </div>
+
+        <div>
+            <form action="/" method="post"></form>
+        <label for="Domicilio"> Ingrese Domicilio</label>
+        <input type="text" id="Domicilio">
+        </div>
+        
+        <div>
+            <form action="/" method="post"></form>
+        <label for="PerfilUsuario"> Perfil de Usuario</label>
+        <input type="text" id="PerfilUsuario">
+        </div>
+        
+        <div>
+            <form action="/" method="post">
+                <label for="Categorias"> Categorias de Interes</label>
+            <select name="Categorias" id="Categorias">
+            <option value="Electro">Electro</option>
+            <option value="Moda">Moda</option>
+            <option value="Hogar">Hogar</option>
+            <option value="Jugueteria">Jugueteria</option>
+            <option value="Vida sana">Vida sana</option>
+            </form>
+        </select>
+        </div>
+        
+        <div>
+            <form action="/" method="post">
+                <label for="FotoUsuario">Foto de Usuario</label>
+                <input type="image" id="FotoUsuario">
+            </form>
+        </div>
+        
+        <div>
+            <form action="/" method="post">
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" id="Contraseña">
+            </form>
+        </div>
+
+        <div>
+            <form action="/" method="post">
+                <label for="ConfirmarContraseña">Confirmar Contraseña</label>
+                <input type="password" id="ConfirmarContraseña">
+                <button type="reset">reset</button>
+            </form>
+        </div>
+        <div>
+            <a href="/home"><button> Volver al inicio </button> </a>
+        </div>
+    </section>
+    </section>
+</body>
+</html>
