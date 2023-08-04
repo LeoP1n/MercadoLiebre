@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(223, 223, 223);
+    height: 100vh;
+}
+.menu{
+    height: 25vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    background-color:#EAC926; ;
+}
+.menu1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    align-self: flex-start;
+    width: 40%;
+    height: 80%;
+}
+.lupa{
+    width: 10%;
+    height: 10%;
+}
+.botonmenu{
+    padding-top: 15px;
+    align-self: center;
+    height: 30% ;
+    width: 15%;
+}
+.busqueda{
+    border: 2px solid gray;
+    border-radius: 3px;
+}
+.menu2{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.menu2{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+.menu2>div{
+    width: 30%;
+    justify-content: space-evenly;
+    display: flex;
+}
+.formulario{
+    height: 40%;
+    margin-top: 50px;
+    justify-content: center;
+
+    display: flex;
+}
+.login{
+    box-shadow: 0px 0px 10px 2px black;
+    padding: 30px;
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    display: flex;
+}
+.login>h2{
+    height: 10px;
+}
+.login>div>label{
+    font-size: large;
+}
+.login>div{
+    width: 100%;
+}
+.login>div>div>input{
+    font-size: large;
+    width: 100%;
+}
+.boton{
+    width: 100%;
+    position: relative;
+}
+.boton>button{
+    width: 30%;
+    height: 130%;
+    color: white;
+    background-color: blue;
+    position: relative;
+    left: 70%;
+}
+
+footer{
+    box-shadow: 0px 0px 5px 5px #BDC3C7 ;
+    padding-top: 10px;
+    width: 100vw;
+    background-color:#D7DBDD; ;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer>section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+footer>section>i{
+    color: blue;
+}
+footer>section>p{
+    text-align: center;
+}

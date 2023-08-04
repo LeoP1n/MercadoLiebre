@@ -9,10 +9,11 @@
 <body>
     <header class="menu">
         <div class="menu1">
-            <img class="logo" src="/imagen/logo-mercado-liebre.svg" alt="LOGO">
-            <div class="busqueda"><input type="text" name="Buscar" id="Buscar" placeholder="Buscar..."></div>
-            <div class="compra">Compra en cuotas y sin tarjeta de credito</div>
-        </div>
+            <a href="/home" class="logo"><img src="/imagen/logo-mercado-liebre.svg" alt="LOGO"></a>
+                
+                <div class="busqueda"><input type="text" name="Buscar" id="Buscar" placeholder="Buscar..."></div>
+                <div class="compra"><i class="fa-regular fa-handshake"></i>Compra en cuotas y sin tarjeta de credito</div>
+            </div>
         <section class="menu2">
             <div>
                 <div>Ofertas</div>
@@ -28,74 +29,91 @@
         </section>
     </header>
 
-    <section class="Registrate">
+    <form action="" method="post" class="registrate">
         <section>
-        <div>
-            <form action="/" method="post"></form>
-            <label for="Nombre"> Nombre y Apellido </label>
-            <input type="text" id="Nombre">
-    </div>
-    <div>
-        <form action="/" method="post"></form>
-        <label for="NombreUsuario"> Nombre de Usuario </label>
-        <input type="text" id="NombreUsuario">
-    </div>
-        <div>
-            <form action="/" method="post"></form>
-        <label for="FechaNacimiento"> Fecha de nacimiento</label>
-        <input type="date" id="FechaNacimiento">
-        </div>
-
-        <div>
-            <form action="/" method="post"></form>
-        <label for="Domicilio"> Ingrese Domicilio</label>
-        <input type="text" id="Domicilio">
-        </div>
+                <label for="Nombre"> Nombre y Apellido </label>
+                <div>
+                <input type="text" id="Nombre">
+            </div>
         
-        <div>
-            <form action="/" method="post"></form>
-        <label for="PerfilUsuario"> Perfil de Usuario</label>
-        <input type="text" id="PerfilUsuario">
+            <label for="NombreUsuario"> Nombre de Usuario </label>
+            <div>
+            <input type="text" id="NombreUsuario">
         </div>
-        
-        <div>
-            <form action="/" method="post">
+            
+            <label for="FechaNacimiento"> Fecha de nacimiento</label>
+            <div>
+            <input type="date" id="FechaNacimiento">
+            </div>
+    
+            
+            <label for="Domicilio"> Ingrese Domicilio</label>
+            <div>
+            <input type="text" id="Domicilio">
+            </div>
+            
+            
+            <label for="PerfilUsuario"> Perfil de Usuario</label>
+            <div>
+            <input type="text" id="PerfilUsuario">
+            </div>
+            
+            
                 <label for="Categorias"> Categorias de Interes</label>
-            <select name="Categorias" id="Categorias">
-            <option value="Electro">Electro</option>
-            <option value="Moda">Moda</option>
-            <option value="Hogar">Hogar</option>
-            <option value="Jugueteria">Jugueteria</option>
-            <option value="Vida sana">Vida sana</option>
-            </form>
-        </select>
-        </div>
-        
-        <div>
-            <form action="/" method="post">
+                <div>
+                <select name="Categorias" id="Categorias">
+                    <option value="Electro">Electro</option>
+                    <option value="Moda">Moda</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Jugueteria">Jugueteria</option>
+                    <option value="Vida sana">Vida sana</option>
+            </select>
+            </div>
+            
+            
                 <label for="FotoUsuario">Foto de Usuario</label>
+                <div>
                 <input type="image" id="FotoUsuario">
-            </form>
-        </div>
-        
-        <div>
-            <form action="/" method="post">
-                <label for="Contraseña">Contraseña</label>
-                <input type="password" id="Contraseña">
-            </form>
-        </div>
+            </div>
+            
+            
+                    <label for="Contraseña">Contraseña</label>
+                    <div>
+                        <input type="password" id="Contraseña">
+                </div>
+    
+            
+                    <label for="ConfirmarContraseña">Confirmar Contraseña</label>
+                    <div>
+                    <input type="password" id="ConfirmarContraseña">
+                </div>
 
-        <div>
-            <form action="/" method="post">
-                <label for="ConfirmarContraseña">Confirmar Contraseña</label>
-                <input type="password" id="ConfirmarContraseña">
-                <button type="reset">reset</button>
-            </form>
-        </div>
-        <div>
-            <a href="/home"><button> Volver al inicio </button> </a>
-        </div>
-    </section>
-    </section>
+                <div class="botones">
+                    <div>
+                    <button class="reset" type="reset">Reset</button>
+                </div>
+                <div>
+                    <a href="/home" ><button class="volver"> Enviar </button> </a>
+                </div>
+                </div>
+        </section>
+    </form>
+    <footer>
+        <section>
+            <i class="fa-solid fa-credit-card fa-3x --fa-inverse"></i>
+            <h2>Paga con tarjeta de credito</h2>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section>
+            <i class="fa-solid fa-gift fa-3x --fa-inverse"></i>
+            <h2>Envio gratis a partir de los 2500$</h2>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+        <section>
+            <i class="fa-solid fa-shield-halved fa-3x --fa-inverse"></i>
+            <h2>Seguridad de principio a fin</h2>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        </section>
+    </footer>
 </body>
 </html>
