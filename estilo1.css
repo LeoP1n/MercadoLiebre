@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #E5E7E9;
+    height: 100vh;
+}
+.menu{
+    height: 25vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    background-color:#EAC926; ;
+}
+.menu1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    align-self: flex-start;
+    width: 25%;
+    height: 80%;
+}
+.lupa{
+    width: 10%;
+    height: 10%;
+}
+.botonmenu{
+    padding-top: 15px;
+    align-self: center;
+    height: 30% ;
+    width: 15%;
+}
+.busqueda{
+    border: 2px solid gray;
+    border-radius: 3px;
+}
+.menu2{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.menu2{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+.menu2>div{
+    width: 30%;
+    justify-content: space-evenly;
+    display: flex;
+}
+.banner{
+    height: 40vh;
+    margin-bottom: 30px;
+    width: 100vw;
+}
+.catalogo{
+    width: 100vw;
+    height: auto;    
+}
+.catalogo>h1,.catalogoofertas>h1{
+    padding-left: 100px;
+}
+.productos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.img>div{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212F3D ;
+    position: absolute;
+    z-index: 0;
+    opacity: 0%;
+    transition: opacity;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+.nombre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #FDFEFE;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.prod:hover .img>div{
+    display: block;
+    opacity:80% ;
+}
+.imagen1{
+    position: relative;
+    height: 200%;
+    width: 230px;
+    margin: 20px
+}
+
+
+.contenedor{
+    border-top: 3px solid #AAB7B8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+}
+
+.prod{
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    display: flex;
+    width: 270px;
+    height: 350px;
+    font-size: 16px;
+    position: relative;
+    transition: cursor box-shadow;
+}
+.prod:hover{
+    cursor: pointer; 
+    box-shadow: 1px 1px 10px 10px grey;
+
+}
+div{
+    transition: rotate;
+}
+.prod:hover .envio{
+    animation: rotar 0.8s;
+}
+.envio{
+    border-radius: 100px;
+    z-index: 2;
+    position: absolute;
+    top: -15;
+    right: -20;
+}
+@keyframes rotar{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: -90deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+
+
+
+
+.contenedor>span{
+    padding-left: 40px;
+}
+.datos{
+    z-index: 2;
+    padding-top: 20px;
+    padding-right: 75px;
+    width: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    padding-left: 40px;
+}
+.prod>span{
+    position: absolute;
+    bottom: 20;
+    left: 50;
+}
+.datos>div{
+    color: green;
+}
+.ofertas{
+    margin-top: 40px;
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    box-shadow: 0px 0px 5px 5px #BDC3C7 ;
+    padding-top: 10px;
+    width: 100vw;
+    background-color:#F2F3F4 ;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer>section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+footer>section>i{
+    color: #3498DB ;
+}
+footer>section>p{
+    text-align: center;
+}
+.menuboton{
+    display: none!important;
+}
+@media (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menuizquierda{
+        display: none!important;
+    }
+    .menuderecho{
+        display: none!important;
+    }
+    .menuboton{
+        display: contents!important;
+    }
+    .menu{
+        height: 100px;
+        justify-content: stretch;
+        position: fixed;
+        top: 0;
+    }
+    .menu2{
+        width: 600px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
