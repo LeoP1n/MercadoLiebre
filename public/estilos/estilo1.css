@@ -78,6 +78,18 @@ body{
     justify-content: space-around;
     display: flex;
 }
+.renglon1{
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+}
+.renglon2{
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+}
 .img{
     display: flex;
     flex-direction: column;
@@ -233,6 +245,12 @@ footer>section>p{
     display: none!important;
 }
 @media (max-width:768px){
+    header{
+        z-index: 3;
+    }
+    body{
+        z-index: 1;
+    }
     *{
         margin: 0;
         padding: 0;
@@ -259,5 +277,30 @@ footer>section>p{
         justify-content: center;
         align-items: center;
     }
-    
+    .productos{
+        flex-direction: column;
+        height: 140vh;
+        width: 100vw;
+    }
+    .renglon1{
+        height: 40%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+    }
+    .renglon2{
+        height: 40%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+    }
+    .ofertas{
+        height: 140%;
+        flex-direction: column;
+    }
+    footer>section{
+        text-align: center;
+    }
 }

@@ -6,6 +6,10 @@ body{
     background-color: #E5E7E9;
     height: 100vh;
 }
+.menuboton{
+    display: none !important;
+    visibility: hidden !important;
+}
 .menu{
     height: 25vh;
     width: 100vw;
@@ -121,4 +125,21 @@ footer>section>i{
 }
 footer>section>p{
     text-align: center;
+}
+@media(max-width:768px){
+    .menu2{
+        justify-content: center;
+    }
+    .menuboton{
+        visibility: visible !important;
+        display: contents !important;
+    }
+    .menuderecho{
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .menuizquierda{
+        display: none !important;
+        visibility: hidden !important;
+    }
 }
