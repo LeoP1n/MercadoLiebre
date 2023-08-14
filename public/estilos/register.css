@@ -71,19 +71,29 @@ body{
     justify-content: space-evenly;
     display: flex;
 }
+
+.volver:hover {
+    background-color: #4e265f;
+    transition: 1s;
+}
+.reset:hover{
+    background-color: #4e265f;
+    transition: 1s;
+}
 .reset{
     width: 80px;
     height: 35px;
     margin: 20px;
     color: white;
-    background-color: blue;
+    background-color: #2C3E50;
+
 }
 .volver{
     height: 35px;
     width: 80px;
     margin: 20px;
     color: white;
-    background-color: blue;
+    background-color: #2C3E50;
 }
 .menu2{
     align-self: center;
